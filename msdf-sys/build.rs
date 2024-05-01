@@ -62,7 +62,7 @@ fn main() {
         .allowlist_type("msdfgen::.*")
         .allowlist_function("msdfgen::.*")
         .header("wrapper.h")
-        .parse_callbacks(Box::new(bindgen::CargoCallbacks))
+        .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
         .generate()
         .expect("Unable to generate bindings");
 

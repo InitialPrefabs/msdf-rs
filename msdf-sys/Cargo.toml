@@ -1,6 +1,6 @@
 [package]
 name = "msdf-sys"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 repository = "https://github.com/penple/msdf-rs/"
 license = "MIT"
@@ -17,9 +17,9 @@ exclude = [
 
 [build-dependencies]
 cmake = "0.1.48"
-bindgen = "0.60.1"
+bindgen = "0.69.4"
 fs_extra = "1.2.0"
 
 [dev-dependencies]
-ttf-parser = "0.15.2"
-image = "0.24.2"
+ttf-parser = "0.20.0"
+image = "0.25.1"

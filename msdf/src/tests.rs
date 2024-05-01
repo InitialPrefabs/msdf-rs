@@ -22,7 +22,7 @@ fn with_glyph<F: FnOnce(Shape, Projection)>(glyph: char, size: u32, callback: F)
 
     reader.read_to_end(&mut font_data).unwrap();
 
-    let face = Face::from_slice(font_data.as_slice(), 0).unwrap();
+    let face = Face::parse(font_data.as_slice(), 0).unwrap();
 
     let glyph_index = face.glyph_index(glyph).unwrap();
 
